@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+
+form{
+   /* background-color: grey;*/
+}
+label
+{
+    color:red;
+}
+input{
+    background-color: gray;
+}

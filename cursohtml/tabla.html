@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang ="es">
+<head>
+    <meta charset ="UTF-8"/>
+    <title>Tablas</title>
+    <!--CSS-->
+    <style> 
+    col:nth-child(1) /* Seleccionamos la columna 1 definida en el colgroup, y nos va pintar solo una columna*/
+    {
+        background-color:red;
+    }
+    col:nth-child(2)
+    {
+        background-color: green;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ejercicio de tablas Dorian</h1>
+    </header>
+    <main>
+        <!--Tabla, no correcta semanticamente-->
+        <table>
+            <tr>
+                <td>                </td>
+                <td>        L       </td>
+                <td>        M       </td>
+                <td>        X       </td>
+                <td>        J       </td>
+                <td>        V       </td>
+            </tr>
+            <tr>
+                <td>   8:30-9:30    </td>
+                <td>   Matematica   </td>
+                <td>   Matematica   </td>
+                <td>   Sociales     </td>
+                <td>   Matematica   </td>
+                <td>   Matematica   </td>
+            </tr>
+            <tr>
+                <td>   9:30-10:25   </td>
+                <td>     Lengua     </td>
+                <td>     Lengua     </td>
+                <td>   Matematica   </td>
+                <td>    Ciencias    </td>
+                <td>     Lengua     </td>
+            </tr>
+            <tr>
+                <td>  10:25-11:20   </td>
+                <td>Educacion Fisica</td>
+                <td>    Ciencias    </td>
+                <td>     Lengua     </td>
+                <td>     Lengua     </td>
+                <td>Educacion Fisica</td>
+
+            </tr>
+            <tr>
+                <td> 11:20-11:45</td>
+                <td>                      RECREO                            </td>
+            </tr>
+            <tr>
+                <td>   11:45-12:40  </td>
+                <td>     Ingles     </td>
+                <td>    Sociales    </td>
+                <td>     Ingles     </td>
+                <td>    Tutoria     </td>
+                <td>     Ingles     </td>
+            </tr>
+            <tr>
+                <td>    12:40-13:35 </td>
+                <td>     Musica     </td>
+                <td>Educacion Fisica</td>
+                <td>    Plastica    </td>
+                <td>    Religion    </td>
+                <td>     Musica     </td>
+
+            </tr>
+            <tr>
+                <td>   13:35-14:30  </td>
+                <td>   Tecnologia   </td>
+                <td>     Frances    </td>
+                <td>   Tecnologia   </td>
+                <td>     Frances    </td>
+                <td>   Tecnologia   </td>
+
+            </tr>
+
+        </table>
+        <br>
+
+        <!--Esto es una tabla semanticamente correcto: -->
+        <table>
+            <caption>Titulo de la Tabla</caption>
+            <!--Aca llamamos a cada columna dentro de una etiqueta <colgroup>-->
+            <colgroup>
+                <col><!-- El primer <col> indica la columna 1-->
+                <col span="4"> <!--Aca le decimos que nos seleccione todo la columna empezando desde el 2-->
+            </colgroup>
+            <thead><!--Encabezado de la tabla-->
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                    <th>Encabezado 3</th>
+                    <th>Encabezado 4</th>
+                    <th>Encabezado n</th>
+                </tr>
+            </thead>
+            <tbody><!--Contenido de la tabla-->
+                <tr>
+                    <td>Contenido 1</td>
+                    <td>Contenido 2</td>
+                    <td>Contenido 3</td>
+                    <td>Contenido 4</td>
+                    <td>Contenido n</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Contenido n</td> <!--Aca contenido nos ocupa 5 columnas pero no lo 
+                    podemos ver, para verlo lo puse en CSS-->
+                </tr>
+            </tbody>
+            <tfoot><!--Pie de la tabla-->
+                <tr>
+                    <td colspan="4">Total de contenidos</td>
+                    <td>5</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

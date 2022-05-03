@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!--Establece el tipo de estardar del documento, en este caso el html 5-->
+<html lang="es"> <!--Es el lenguaje , en este caso en=ingles, es=español-->
+<!--Head es un contenedor de una serie de elementos que proveen metadatos 
+al documento html-->
+<head>
+    <meta charset="UTF-8"/> <!-- esto nos sirve para en caso de tener fallos en la escritura del programa-->
+    <title>Curso html</title>
+    <style>
+        col:nth-child(4)
+        {
+            background-color: green;
+        }
+    </style>
+</head>
+<!--Representa todo el contenido de la pagina web-->
+<body>
+    <!--Encabezado de la pagina o sitio web-->  
+    <header>
+        <h1>Curso html, Clases:</h1>
+    </header>><!--Navegacion de multiples paginas-->
+    <nav>
+        <ul type = "square">
+            <li><a href="/headings-and-paragraphs.html" target = "_blank">Tipos de encabezados y Parrafos</a></li>
+            <li><a href="/Section-Articles.html" target="_blank">Secciones y Articulos 1</a></li>
+            <li><a href="/Section-Article-2.html" target="_blank">Seccioones y Articulos 2</a></li>
+            <li><a href = "seccion-de-contenidos.html" target="_blank">Ejemplo de encabezado</a></li>
+            <li><a href="Practica.html" target="_blank">Ejercicio 1 </a></li>
+            <li><a href ="Enlaces.html" target="_blank">Enlaces - Introduccion</a></li>
+            <li><a href = "Enlace1.html" target="_blank">Enlaces 1</a></li>
+            <li><a href = "navegacion-con-anclas.html" target="_blank">Navegacion con Anclas</a></li>
+            <li><a href = "/Listas/listas.html">Listas en html</a></li>
+            <li><a href="tabla.html" target="_blank">Tablas</a></li>
+            <li><a href="/address.html" target="-self">Etiqueta Address</li>
+            <li><a href="/formulario.html">Formulario en HTML</a></li>
+            <li><a href="https://www.youtube.com/watch?v=GfIvfO9o6lo&t=4644s" target = "_self" title ="Ver video">Ver un video</a></li>
+        </ul>
+    </nav>
+    <!--Contenido principal de la pagina web o sitio web-->
+    <main>
+        <!--Elemento de Bloque-->
+
+        <p class="EtiquetaDeBloque" title ="Etiqueta de Bloque">Elemento de Bloque</p>
+        <p class="EtiquetaDeBloque" title = "Etiqueta de Bloque">Elemento de Bloque</p>
+        <!--Elemeneto de Linea-->
+        <span>Elemento de Linea</span>
+        <span>Elemento de Linea</span>
+
+        <p>El <em>dinero</em> es importante ,pero la <strong>vida</strong> es mas importante. <small>Saludos</small></p>.
+        <br>
+        <p>Hola</p>
+        <!--La etiqueta wbr o - es aquel que se usa para hacer slato de linea en una palabra larga-->
+        <p>http://HolaComoteVa/Puesestoymuybien/CursoDeHTML-UsodelaetiquetaWBR/NosVemos</p>
+        <p>El dia de la independicia el <time datetime="2021-07-09">9 de Julio del 2021</time></p>
+
+        <br>
+        <!--Etiquetas de estilo en HTML-->
+        <u>hola que hace</u>
+        <i>Hola que hace</i>
+        <b>Hola que hace</b>
+        
+        <a href="assets/images/hobbit1.jpeg" download title="Descargar Imagen">Descargar imagen</a>
+        <p></p>
+        <table>
+            <caption>Titulo De la Tabla</caption>
+            <colgroup>
+                <col span="2">
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Sueldo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dorian</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>Jose</td>
+                    <td>3000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total: 5000 </td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </main>
+    <!--Pie de pagina de la pagina o sitio web-->
+    <footer>
+        Curso HTML
+    </footer>
+    
+</body>
+</html>

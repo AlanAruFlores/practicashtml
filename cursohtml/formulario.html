@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Formularios</title>
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <form>
+            <!--Asociar label y input-->
+            <label for ="name">Nombre</label>
+            <input id ="name">
+            <label for ="apellido">Apellido</label>
+            <input id="apellido">
+            <button>Enviar</button>
+        </form>
+        <!--Otra forma-->
+        <form>
+            <label>
+                Nombre
+                <input>
+            </label>
+            <label>
+                Apellido
+                <input>
+            </label>
+            <button>Enviar</button>
+        </form>
+        <!--Input type button vs button-->
+        
+        <form>
+            <input>
+            <input type=button value="enviar">
+            <button>enviar</button>
+        </form>
+        <form>
+        <!--La diferencia es que el input type button no envia el formulario o la informacion.
+        En cambio, la etiqueta button si se envia, para enviar informacion a traves de un input usamos submit-->
+            <input>
+            <input type="submit" value="enviar">
+            <input type ="date">
+            <button>enviar</button>
+        </form>
+
+        <!--Inputs para fechas-->
+        <form>
+            <input type = "date">
+            <br>
+            <input type = "date">
+            <input type = "time">
+            <br>
+            <input type = "month">
+            <br>
+            <input type = "week">
+        </form>
+        <!--Otros Inputs-->
+        <form>
+            <input type ="password" placeholder="Contraseña" required>
+            <input type ="radio">
+            <input type ="search">
+            <button>Enviar</button>
+        </form>
+        <!--Inputs extras y semantica-->
+        <form>
+            <div>
+                <label>
+                    <input type = "color">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type = "number">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type ="range" step = "10" min = "0" max = "90">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type ="reset"></input>
+                </label>
+            </div>
+        </form>
+
+        <!--Input radio-->
+        <form>
+            <h2>Ejemplo con Input Radio</h2>
+            <div>
+                <label>Masculino
+                    <input type = "radio" name ="gender" value ="masculino" checked>
+                </label>
+            </div>
+            <div>
+                <label>Femenino
+                    <input type ="radio" name = "gender" value ="femenino">
+                </label>
+            </div>
+            <div>
+                <label>Desconocido
+                    <input type ="radio" name ="gender" value ="desconocido">
+                </label>
+            </div>
+            <div>
+                <label>Ignorar
+                    <input type ="radio" name="gender" value ="ignorar">
+                </label>
+            </div>
+        </form>
+        <!--Input Chechbox-->
+        <form>
+            <h2>Ejemplo con CheckBox</h2>
+            <div>
+                <label>HTML
+                    <input type="checkbox" value="html" name="languages" checked>
+                </label>
+            </div>
+            <div>
+                <label>CSS
+                    <input type ="checkbox" value ="css" name="languages" checked>
+                </label>
+            </div>
+            <div>
+                <label>JavaScript
+                    <input type ="checkbox" value="JavaScript" name ="languages" checked>
+                </label>
+            </div>
+            <div>
+                <label>PHP
+                    <input type ="checkbox" value="php" name="languages" checked>
+                </label>
+            </div>
+        </form>
+        <hr>
+        <!--Etiqueta select-->
+        <!--Esta etiqueta nos permite como lo dice su nombre seleccionar una  o mas opciones dentro de una lista de opciones, como por ejemplo:-->
+        <form>
+            <select name = "animales">
+                <optgroup label="Carnivoros">
+                    <option value="leon">Leon</option>
+                    <option value ="tigre">Tigre</option>    
+                </optgroup>
+                <optgroup label="Herviboros">
+                    <option value ="zebra">Zebra</option>
+                    <option value="ciervo">Ciervo</option>
+                </optgroup>
+            </select>
+        </form>
+        <!--La etiqueta <optgroup> es una etiqueta para dividir contenedio de una lista para asi tenerlo mas ordenado, esto se usa en caso de que tengamos muchas opciones-->
+        
+        <!--Datalist-->
+        <!--Datalist es una lista similar a la etiqueta select a diferencia que este contiene un buscador para que el usuario pueda buscar de una forma mas sencilla, Ejemplo:-->
+        <form>
+            <input type="list" list="animales">
+            <datalist id="animales">
+                <option value="leon">Leon</option>
+                <option value="tigre">Tigre</option>
+            </datalist>
+        </form>
+        <!--En este tipo de lista se va a visualizar primero el value y luego el texto que esta entre el option-->
+
+    </body>
+</html>

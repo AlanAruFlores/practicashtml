@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset=" UTF-8"/>
+        <title>Pagina</title>
+        <link rel="stylesheet" href="/estilo.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="assets/images/hobbit1.jpeg" height="200"width="1300">
+            <h1>Hobbit</h1>
+        </header>
+        <nav>
+            Inicio
+            Contacto
+            Acerca de 
+        </nav>
+        <main>
+            <form action = "/Articulos-seccion.html" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" pattern=".{a,z}" title="Ingrese 2 char min y 4 char max">
+                <br>
+                <label for="contraseña">Contraseña</label>
+                <input type="text" id="contraseña" name ="contraseña">
+                <!--
+                <label for="archivo">Archivo</label>
+                <input type="file" name="archivo" id="archivo" multiple accept="image/*">
+                <input type="submit" value="enviar">
+                -->
+
+
+            </form>
+            
+        </main>
+        <footer>
+            <p>Hecha por Anonimato</p>
+            <address>
+                Google<br>
+                New York<br>
+                123
+            </address>
+        </footer>
+    </body>
+
+</html>
